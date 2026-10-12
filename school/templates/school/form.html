@@ -1,0 +1,1 @@
+{% extends 'school/base.html' %}{% block content %}<h1>{{ title }}</h1><section class="panel"><form method="post" enctype="multipart/form-data">{% csrf_token %}{{ form.as_p }}{% if upload_form %}{{ upload_form.as_p }}{% endif %}<button>Ruaj</button><a class="button secondary" href="{% url 'dashboard' %}">Kthehu në panel</a></form></section>{% endblock %}

@@ -1,0 +1,3 @@
+Për rivendosjen e fjalëkalimit hapni këtë lidhje:
+{{ protocol }}://{{ domain }}{% url 'password_reset_confirm' uidb64=uid token=token %}
+Nëse nuk e kërkuat këtë veprim, mund ta shpërfillni mesazhin.
